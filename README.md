@@ -17,17 +17,17 @@ Procedure
 Prompt the user for P and M, where P is the number of philosophers and M is the total number of meals to be eaten. After prompting the user for P and M, fork a single thread for each philosopher.
 There will be a number of chopsticks available equal to the number of philosophers (P). Each thread will then run through the Dining Philosophers algorithm, which is shown below:
 
-	Sit down at table.
-	Pick up left chopstick.
-	Pick up right chopstick.
-	Begin eating.
-	Continue eating for 3–6 cycles.
-	Put down left chopstick.
-	Put down right chopstick.
-	Begin thinking.
-	Continue thinking for 3–6 cycles.
-	IF all meals have not been eaten, GOTO 2.
-	ELSE leave the table.
+	1. Sit down at table.
+	2. Pick up left chopstick.
+	3. Pick up right chopstick.
+	4. Begin eating.
+	5. Continue eating for 3–6 cycles.
+	6. Put down left chopstick.
+	7. Put down right chopstick.
+	8. Begin thinking.
+	9. Continue thinking for 3–6 cycles.
+	10.IF all meals have not been eaten, GOTO 2.
+	   ELSE leave the table.
 
 As this is an extraordinarily polite group of philosophers, they hold themselves to the highest standards of etiquette. All philosophers must enter the room together and none should sit down until all are
 present. Likewise, no philosopher should get up from the table to leave until all are ready to do so.
@@ -53,17 +53,17 @@ can hold, and M is the total number of messages to be sent before the simulation
 Procedure
 After prompting the user for N, S, and M, fork several threads equal to the number of people involved in the simulation. Each person then proceeds according to the following algorithm:
 
-	Enter the post office.
-	Read a message in that person’s mailbox.
-	Call V() on a semaphore corresponding to that person’s mailbox.
-	Yield.
-	IF there are more messages to read, GOTO 2.
-	ELSE compose a message addressed to a random person other than themselves.
-	Call P() on a semaphore corresponding to the recipient’s mailbox.
-	Place the message in their mailbox.
-	Leave the post office.
-	Wait for 3–6 cycles.
-	GOTO 1.
+	1. Enter the post office.
+	2. Read a message in that person’s mailbox.
+	3. Call V() on a semaphore corresponding to that person’s mailbox.
+	4. Yield.
+	5. IF there are more messages to read, GOTO 2.
+	   ELSE compose a message addressed to a random person other than themselves.
+	6. Call P() on a semaphore corresponding to the recipient’s mailbox.
+	7. Place the message in their mailbox.
+	8. Leave the post office.
+	9. Wait for 3–6 cycles.
+	10. GOTO 1.
 
 For this task, the mailboxes are the critical resource that must be protected via synchronization techniques. Like the chopsticks in Task 1, you must control access to the mailboxes as part of your solution.
 The messages that each person sends should be randomly selected from a list.
