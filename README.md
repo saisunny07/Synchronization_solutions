@@ -26,8 +26,8 @@ There will be a number of chopsticks available equal to the number of philosophe
 	7. Put down right chopstick.
 	8. Begin thinking.
 	9. Continue thinking for 3–6 cycles.
-       10.IF all meals have not been eaten, GOTO 2.
-	   ELSE leave the table.
+	10. IF all meals have not been eaten, GOTO 2.
+		ELSE leave the table.
 
 As this is an extraordinarily polite group of philosophers, they hold themselves to the highest standards of etiquette. All philosophers must enter the room together and none should sit down until all are
 present. Likewise, no philosopher should get up from the table to leave until all are ready to do so.
@@ -63,7 +63,7 @@ After prompting the user for N, S, and M, fork several threads equal to the numb
 	7. Place the message in their mailbox.
 	8. Leave the post office.
 	9. Wait for 3–6 cycles.
-       10. GOTO 1.
+        10. GOTO 1.
 
 For this task, the mailboxes are the critical resource that must be protected via synchronization techniques. Like the chopsticks in Task 1, you must control access to the mailboxes as part of your solution.
 The messages that each person sends should be randomly selected from a list.
