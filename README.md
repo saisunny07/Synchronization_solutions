@@ -63,7 +63,7 @@ After prompting the user for N, S, and M, fork several threads equal to the numb
 	7. Place the message in their mailbox.
 	8. Leave the post office.
 	9. Wait for 3–6 cycles.
-        10. GOTO 1.
+	10. GOTO 1.
 
 For this task, the mailboxes are the critical resource that must be protected via synchronization techniques. Like the chopsticks in Task 1, you must control access to the mailboxes as part of your solution.
 The messages that each person sends should be randomly selected from a list.
