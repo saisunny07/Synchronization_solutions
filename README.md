@@ -89,7 +89,9 @@ Task 4: Command Line
 
 Designing command line argument to your the program that will select which task to run. Invalid values should result in an error message.
 The list of valid arguments is as follows:
-Command Line Argument Options
+
+	Command Line Argument Options
+
 	Argument	Task
 	-A 1	Task 1: Dining Philosophers
 	-A 2	Task 2: Post Office Simulation
