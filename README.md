@@ -92,7 +92,7 @@ The list of valid arguments is as follows:
 
 	Command Line Argument Options
 
-	Argument	Task
-	-A 1	Task 1: Dining Philosophers
-	-A 2	Task 2: Post Office Simulation
-	-A 3	Task 3: Readers-Writer Problem
+	Argument		Task
+	-A 1		Task 1: Dining Philosophers
+	-A 2		Task 2: Post Office Simulation
+	-A 3		Task 3: Readers-Writer Problem
